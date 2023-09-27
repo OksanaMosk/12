@@ -1,26 +1,67 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <form class="search-form" id="search-form">
-      <input
-        class="search-input"
-        type="text"
-        name="searchQuery"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
-      <button type="submit" class="button-submit">Search</button>
-    </form>
 
-    <div class="gallery"></div>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <button type="button" class="load-more">Load more</button>
-    <script type="module" src="./index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page title</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="container page-header-container">
+      <nav class="list page-navigation">
+        <a class="logo link logo-header" href="./index.html">Web<span class="logo-dark">Studio</span></a>
+        <ul class="list menu">
+          <li class="current-studio-item">
+            <a class="menu-item link current-studio" href="./index.html">Studio</a>
+          </li>
+          <li>
+            <a class="menu-item link" href="./index.html">Portfolio</a>
+          </li>
+          <li>
+            <a class="menu-item link" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="addresses">
+        <ul class="list link addresses-nav">
+          <li class="link">
+            <a class="contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="link">
+            <a class="contact link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container hero-container">
+      <h1 class="hero-title">A party without <span class="hero-cocktails">cocktails</span><br />
+        is not like a part</h1>
+      <p class="hero-about">
+        From classic sips to exotic mixes, we're your key to becoming a cocktail wizard!
+      </p>
+    </div>
+    <div class="hero-image">
+
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- ❗️❗️❗️ Add partials like so for every page -->
+
+  <script type="module" src="./index.js"></script>
+</body>
+
 </html>
