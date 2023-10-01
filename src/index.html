@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <section class="hero container">
+    <!-- <section class="hero container">
       <div class="hero-left">
         <h1 class="hero-title text_dark">
           A party without <span class="hero-cocktails">cocktails</span><br />
@@ -114,9 +114,38 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <div class="no_result_container">
+      <h2 class="no_result_title">Favorite cocktails</h2>
+      <div class="no_result_center">
+        <picture>
+          <source
+            srcset="./images/rafiki_desctop.png 1x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="./images/rafiki_tablet.png 1x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/rafiki_tablet.png 1x"
+            media="(min-width: 320px)"
+          />
+          <img
+            class="no_result_img"
+            src="./images/rafiki_desctop.png"
+            alt=""
+            ;
+          />
+        </picture>
+        <p class="no_result">
+          You haven't added any<br /><span class="no_result_fc"
+            >favorite cocktails</span
+          >yet
+        </p>
+      </div>
+    </div>
 
     <script type="module" src="./index.js"></script>
   </body>
